@@ -11,12 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio | </title>
+    <title>Portfolio</title>
 
-    <script type="module" src="/main.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <div id="app"></div>
     <header class="header">
       <nav class="nav">
         <img
@@ -32,7 +31,7 @@
             <a class="nav__link" href="#section--1">About</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--2">Operations</a>
+            <a class="nav__link" href="#section--2">a</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#section--3">Work</a>
@@ -46,14 +45,13 @@
       </nav>
 
       <div class="header__title">
-        <!-- <h1 onclick="alert('HTML alert')"> -->
         <h1>
-          HI, I'm Trịnh Quốc Trung
+          Hi, I'm Trịnh Quốc Trung
         </h1>
-        <h4>I'm web developer</h4>
+        <h4>I'm website developer</h4>
         <button class="btn--text btn--scroll-to">About me &DownArrow;</button>
         <img
-          src="img/aomixi.jpg"
+          src="img/avatar.jpg"
           class="header__img"
           alt="Minimalist bank items"
         />
@@ -64,14 +62,14 @@
       <div class="section__title">
         <h2 class="section__description">About</h2>
         <h3 class="section__header">
-          Everything you need in a modern bank and more.
+          Web Developer
         </h3>
       </div>
 
       <div class="features">
         <img
-          src="img/digital-lazy.jpg"
-          data-src="img/digital.jpg"
+          src="img/code.jpg"
+          data-src="img/code.jpg"
           alt="Computer"
           class="features__img lazy-img"
         />
@@ -81,51 +79,43 @@
               <use xlink:href="img/icons.svg#icon-monitor"></use>
             </svg>
           </div>
-          <h5 class="features__header">100% digital bank</h5>
+          <h5 class="features__header">knowledge</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
-            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
-            debitis ducimus.
+            I am a front-end web developer. I can fluently use the following programming languages ​​HTML, CSS3, Javascript,...
           </p>
         </div>
 
         <div class="features__feature">
           <div class="features__icon">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-trending-up"></use>
-            </svg>
+              <img src="img/file-earmark-code.svg" alt="">
           </div>
-          <h5 class="features__header">Watch your money grow</h5>
+          <h5 class="features__header">Development projects</h5>
           <p>
-            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
-            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
-            quibusdam!
+            I can provide the code and use it according to the customer's request perfectly.
           </p>
         </div>
         <img
-          src="img/grow-lazy.jpg"
-          data-src="img/grow.jpg"
+          src="img/project.png"
+          data-src="img//project.png"
           alt="Plant"
           class="features__img lazy-img"
         />
 
         <img
-          src="img/card-lazy.jpg"
-          data-src="img/card.jpg"
+          src="img/1.jpg"
+          data-src="img/1.jpg"
           alt="Credit card"
           class="features__img lazy-img"
         />
         <div class="features__feature">
           <div class="features__icon">
             <svg>
-              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
             </svg>
           </div>
-          <h5 class="features__header">Free debit card included</h5>
+          <h5 class="features__header">Increase web interaction</h5>
           <p>
-            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
-            eveniet consequatur odit quam quos possimus assumenda dicta fuga
-            inventore ab.
+            I also make the website more & more interactive with web animations.
           </p>
         </div>
       </div>
@@ -212,7 +202,7 @@
       <div class="section__title section__title--testimonials">
         <h2 class="section__description">Not sure yet?</h2>
         <h3 class="section__header">
-          Những dự án từng tham gia
+          Millions of Bankists are already making their lifes simpler.
         </h3>
       </div>
 
@@ -286,11 +276,10 @@
     <section class="section section--sign-up">
       <div class="section__title">
         <h3 class="section__header">
-          The best day to join Bankist was one year ago. The second best is
-          today!
+          If you are satisfied or not, please give feedback!
         </h3>
       </div>
-      <button class="btn btn--show-modal">Open your free account today!</button>
+      <button class="btn btn--show-modal">feedback</button>
     </section>
 
     <footer class="footer">
@@ -317,7 +306,7 @@
           <a class="footer__link" href="#">Contact Us</a>
         </li>
       </ul>
-      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <img src="img/logo.png" alt="Logo" class="footer__logo" />
       <p class="footer__copyright">
         &copy; Copyright by
         <a
@@ -348,6 +337,23 @@
     </div>
     <div class="overlay hidden"></div>
 
-    <!-- <script src="script.js"></script> -->
+    <!-- FEEDBACK -->
+    <div class="fmodal hidden">
+      <button class="btn--close-fmodal">&times;</button>
+      <h2 class="fmodal__header">
+        FEEDBACK <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="fmodal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
   </body>
 </html>
